@@ -109,18 +109,7 @@ nav a:hover {
 
 /*--------------------------------------------------------------
 # hero
---------------------------------------------------------------*/
-#hero {
-    width: 100%;
-    height: 100vh;
-    background: url("/assets/images/email.png") top center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center
-  }
-  
+--------------------------------------------------------------*/  
   #hero .hero-container {
     position: relative;
     z-index: 2;
