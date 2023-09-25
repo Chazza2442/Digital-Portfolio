@@ -29,67 +29,6 @@
               });
             });
           });
-
-          var x = window.matchMedia("(max-width: 768px)")
-          var y = document.getElementById("hide");
-          myFunction(x)
-          x.addListener(myFunction)
-
-          function myFunction(x) {
-            if (x.matches) { // If media query matches
-              addRow()
-              y.style.display = "none";
-            }
-          }
-
-          function addRow () {
-            document.querySelector('#content').insertAdjacentHTML(
-                  'afterbegin',
-                  `<div class="resume-item">
-                            <h4>The Brooksbank School</h4>
-                            <h5>2016 - 2021</h5>
-                            <p><em>he Brooksbank School, Elland, UK</em></p>
-                            <ul>
-                              <li>English Language – 5</li>
-                              <li>English Literature – 5</li>
-                              <li>Mathematics Option H – 6</li>
-                              <li>Combined Science – 55</li>
-                              <li>Geography – 6</li>
-                              <li>Creative Imedia – D2</li>
-                              <li>Art & Design Practice – D2*</li>
-                            </ul>  
-                          </div>
-                          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                            <h3 class="resume-title">Professional Experience</h3>
-                            <div class="resume-item">
-                              <h4>Programer/Game deveopler</h4>
-                              <h5>2022 - 2023</h5>
-                              <p><em>Impact Gamers, Bradford, UK </em></p>
-                              <ul>
-                                <li>Develope games/programs to teach young people to create game or how to use computers.</li>
-                                <li>Became comptent in how to uses ClickTeam Fusion.</li>
-                                <li>Lead seasons teaching young people how to use ClickTeam Fusion to create games.</li>
-                              </ul>
-                            </div>
-                            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                            <h3 class="resume-title">Professional Experience</h3>
-                            <div class="resume-item">
-                              <h4>Programer/Game deveopler</h4>
-                              <h5>2022 - 2023</h5>
-                              <p><em>Impact Gamers, Bradford, UK </em></p>
-                              <ul>
-                                <li>Develope games/programs to teach young people to create game or how to use computers.</li>
-                                <li>Became comptent in how to uses ClickTeam Fusion.</li>
-                                <li>Lead seasons teaching young people how to use ClickTeam Fusion to create games.</li>
-                              </ul>
-                            </div>
-                        </div>`
-              )
-            }
-
-            function removeRow () {
-              input.parentNode.remove()
-            }
       </script>
       <style>
         #hero {
