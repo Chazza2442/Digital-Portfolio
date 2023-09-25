@@ -4,8 +4,8 @@
 * {
     box-sizing: border-box;
     font-family: sans-serif;
-    outline: 1px solid;
-}
+    /*outline: 1px solid;*/
+  }
 
 body {
     margin: 0;
