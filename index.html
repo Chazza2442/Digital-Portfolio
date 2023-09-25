@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlie's Portfolio</title>
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get all the anchor elements with the "scroll-link" class
+            const scrollLinks = document.querySelectorAll('a.scroll-link');
+        
+            // Add click event listeners to each scroll link
+            scrollLinks.forEach(function(link) {
+              link.addEventListener('click', function(e) {
+                e.preventDefault();
+            
+                const targetId = this.getAttribute('href'); // Get the target section ID
+                const targetElement = document.querySelector(targetId); // Get the target section element
+                const offset = 90; // Adjust the offset value as needed
+                const targetPosition = targetElement.offsetTop - offset; // Get the target section's top position relative to the viewport
+            
+                // Scroll smoothly to the target position
+                window.scrollTo({
+                  top: targetPosition,
+                  behavior: 'smooth'
+                });
+              });
+            });
+          });
+      </script>
+</head>
+<body>
+
+    <!-- ======= navbar Section ======= -->
+    <div class="navbar">
+        <nav>
+            <li><a class="scroll-link" href="#home">Home</a></li>
+            <li><a class="scroll-link" href="#about">About</a></li>
+            <li><a class="scroll-link" href="#skills">Languages</a></li>
+            <li><a class="scroll-link" href="#resume ">Resume </a></li>
+            <li><a class="scroll-link" href="#projects ">Projects </a></li>
+            <li><a class="scroll-link" href="#reference ">Reference </a></li>
+            <li><a class="scroll-link" href="#contact ">Contact </a></li>
+        </nav>
+    </div><!-- End navbar Section -->
+
+    <!-- ======= hero Section ======= -->
+    <section id="home">
+        <section id="hero">
+            <div class="hero-container" data-aos="fade-in">
+              <h1>Charlie O'Connor</h1>
+              <p>I'm a Developer</p>
+        </section>
+    </section><!-- End hero Section -->
+    
+    <main>
+        
+        <!-- ======= about Section ======= -->
+        <section id="about" class="about">
+            <div class="container">
+              <div class="row">
+                <div class="section-title">
+                    <h2>About</h2>
+                    <p>I am enthusiastic, self-motivated, reliable and a hard worker. I am a mature team member and 
+                      adaptable to all challenging situations. I can work well in a team environment and use my own initiative.
+                      I can work well under pressure and adhere to strict deadlines. I have the necessary qualities, technical 
+                      curiosity and initiative to progress in this industry, and I feel thatif given an opportunity it would help 
+                      me to develop my skills further within a professional environment.
+                    </p>
+                  </div>
+                <div>
+           
+                  <div class="container">
+                    <img class="image" src="assets/images/test.png" alt="Image Description">
+                    <div>
+                      <ul class="bullet-list">
+                        <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 August 2005</span></li>
+                        <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+44 7585 779702</span></li>
+                        <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Halifax, United Kingdom</span></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="bullet-list">
+                        <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>18</span></li>
+                        <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>charlieoc2442@gmail.com</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                
+                </div>
+              </div>
+          
+            </div>
+        </section><!-- End about Section -->
+    
+        <!-- ======= Skills Section ======= -->
+        <section id="skills" class="skills">
+            <div class="row">
+              <h2>Programming Languages I Know</h2>
+              <div class="skill-main">
+                <div class="grid-container">
+                  <div class="grid-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" /></div>
+                  <div class="grid-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" /></div>
+                  <div class="grid-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" /></div>
+                  <div class="grid-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /></div>
+                  <div class="grid-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" /></div>
+                  <div class="grid-item"><img src="assets/images/sql-server.png" alt="SQL"></div>
+                </div>
+              </div>
+            </div>
+            
+        </section> <!-- End skills Section -->
+    
+        <!-- ======= Resume Section ======= -->
+        <section id="resume" class="resume">
+          <div class="row">
+            <div class="res-container">
+            
+              <div class="section-title">
+                <h2>Resume</h2>
+              </div>
+          
+              <div class="res-row">
+                <div class="col-lg-6" data-aos="fade-up">
+                  <h3 class="resume-title">Education</h3>
+                  <div class="resume-item">
+                    <h4>Digital T Levels</h4>
+                    <h5>2021 - 2023</h5>
+                    <p><em>Calderdale College, Halifax, UK</em></p>
+                    <li> Occupational Specialism: Digital Production, Design and Development – Merit </li>
+                  </div>
+              
+                  <div class="resume-item">
+                    <h4>The Brooksbank School</h4>
+                    <h5>2016 - 2021</h5>
+                    <p><em>he Brooksbank School, Elland, UK</em></p>
+                    <ul>
+                      <li>English Language – 5</li>
+                      <li>English Literature – 5</li>
+                      <li>Mathematics Option H – 6</li>
+                      <li>Combined Science – 55</li>
+                      <li>Geography – 6</li>
+                      <li>Creative Imedia – D2</li>
+                      <li>Art & Design Practice – D2*</li>
+                    </ul>  
+                  </div>
+                </div>
+            
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                  <h3 class="resume-title">Professional Experience</h3>
+                  <div class="resume-item">
+                    <h4>Programer/Game deveopler</h4>
+                    <h5>2022 - 2023</h5>
+                    <p><em>Impact Gamers, Bradford, UK </em></p>
+                    <ul>
+                      <li>Develope games/programs to teach young people to create game or how to use computers.</li>
+                      <li>Became comptent in how to uses ClickTeam Fusion.</li>
+                      <li>Lead seasons teaching young people how to use ClickTeam Fusion to create games.</li>
+                    </ul>
+                  </div>
+              
+                  
+             
+              </div>
+            </div>
+          </div>
+        </section><!-- End Resume Section -->
+      
+        <section id="projects" class="project">
+            <div class="row">
+              <h2>Projects</h2>
+              <div class="pro-container">
+                      <p>
+                        At college I was involved in a project in which I had to create a VR Medical Simulation using 
+                        Unity and C# for the Health and Social students to use in their exam. This enabled them to
+                        simulate a medical setting through the use of a VR headset. There were 4 tasks that needed to 
+                        be accomplished by the students within the virtual space. 
+                      </p>                 
+                      <p>
+                        During a project I was tasked to create a react website that had a login system and a place where 
+                        users could log and store information about themselves. For the login I created a python backend 
+                        that was connected to a SQL database. The backend handled all the queries like creating, deleting, 
+                        replacing and updating of information to the database. In the end I had a functional login system 
+                        with the use of the SQL database. The user can then login or create a new account and a web page, 
+                        where the user's information that was stored in the database is displayed to the user. 
+                      </p>
+                  
+              </div>
+            </div>
+           
+        </section>
+
+        <section id="reference">
+          <div class="row">
+            <div class="res-container">
+            
+              <div class="section-title">
+                <h2>Resume</h2>
+              </div>
+          
+              <div class="res-row">
+                <div class="yes" data-aos="fade-up">
+                  <div class="resume-item pb-0">
+                    <h4>Personal</h4>
+                    <p>Miss Sarah Hartley</p>
+                    <ul>
+                      <li>07950 660318</li>
+                      <li>sarahhartley68@gmail.com</li>
+                    </ul>
+                  </div>
+            
+                <div class="yes" data-aos="fade-up" data-aos-delay="100">
+                  <div class="resume-item">
+                    <h4>Work placement – Impact Gamers</h4>
+                    <p>Adam Syrop – Founder and Director Impact Gamers</p>
+                    <ul>
+                      <li>07952 228797</li>
+                      <li>adam@impactgamers.net</li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </section><!-- End Resume Section -->
+          
+        <section id="contact" class="contact">
+            <div class="container">
+              <div class="row">
+      
+              <div class="section-title">
+                <h2>Contact</h2>
+                <p>Thank you for your time and consideration and if you are interested in my skills then please do not hesitate to contact me.</p>
+              </div>
+            </div>
+      
+              <div class="row" data-aos="fade-in">
+                <div class="contact-area">
+                  <div class="info">
+                    <div class="address">
+                      <img src="assets/images/gps.png">
+                      <h4>Based:</h4>
+                      <p>Halifax, United Kingdom</p>
+                    </div>
+      
+                    <div class="email">
+                      <img src="assets/images/email.png">
+                      <h4>Email:</h4>
+                      <p>charlieoc2442@gmail.com</p>
+                    </div>
+      
+                    <div class="phone">
+                      <img src="assets/images/phone-call.png">
+                      <h4>Call:</h4>
+                      <p>+44 7585 779702</p>
+                    </div>
+      
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75513.01285327485!2d-1.9568574620353312!3d53.73996352438578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bc201a120ef39%3A0x6c3f29996afa5893!2sHalifax!5e0!3m2!1sen!2suk!4v1688475032328!5m2!1sen!2suk" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+                  </div>
+                  
+                  <div class="info">
+                    <form action="mailto:charlieoc2442@gmail.com" method="get" enctype="text/plain">
+                      <div class="">
+                        <label>Subject</label>
+                        <input type="text" name="Subject">
+
+                      </div>
+                      <div class="">
+                        <label>Message</label>
+                        <textarea type="text" name="body" rows="12"></textarea>
+                      </div>
+                      <div class="cen-button"><button type="submit" value="submit">Send Message</button></div>
+                    </form>
+                  </div>                
+                </div>
+              </div>
+            </div>
+                  
+
+        </section>
+    </main>
+</body>
+</html>
