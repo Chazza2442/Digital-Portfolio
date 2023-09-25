@@ -4,7 +4,7 @@
 * {
     box-sizing: border-box;
     font-family: sans-serif;
-    /*outline: 1px solid;*/
+    outline: 1px solid;
 }
 
 body {
@@ -171,13 +171,14 @@ nav a:hover {
 
   @media (max-width: 1199px) {
     .image {
-      max-width: 300px;
+      max-width: 100%;
     }
   }
 
   @media (max-width: 768px) {
-    .image {
+    .about .container {
       display: block;
+      align-items: center;
     }
   }
 /*--------------------------------------------------------------
@@ -207,6 +208,17 @@ nav a:hover {
   object-fit: cover;
 }
 
+
+@media (max-width: 768px) {
+  .grid-container {
+    padding-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 100px;
+    margin: 0 auto; /* Center the grid container */
+  }
+}
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
@@ -394,4 +406,16 @@ nav a:hover {
   margin-bottom: 20px;
   font-size: 14px;
   color: black;
+}
+
+@media (max-width: 1199px) {
+  .contact .info img{
+    display: none;
+  }
+  .contact .info h4 {
+    padding: 0;
+  }
+  .contact .info p {
+    padding: 0;
+  }
 }
