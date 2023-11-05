@@ -1,6 +1,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 * {
     box-sizing: border-box;
     font-family: sans-serif;
@@ -75,7 +76,7 @@ h2::after { /* Add the underline to all h2 */
   z-index: 9999;
 }
 
-nav {
+.nav {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,9 +103,29 @@ nav li {
   list-style: none;
 }
 
-
 nav a:hover {
   color: #aa8977;
+}
+
+svg {
+  fill: #a8a9b4;
+}
+
+svg:hover {
+  fill: #aa8977;
+}
+
+.icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  .icon {
+    display: block;
+  }
 }
 
 /*--------------------------------------------------------------
