@@ -29,31 +29,6 @@
               });
             });
           });
-          function del(x) {
-            if (x.matches) {
-              const element = document.getElementById("demo");
-              element.remove();
-              add()
-            }
-          }
-          var x = window.matchMedia("(max-width: 768px)")
-          del(x) 
-          x.addListener(del)
-          var codeBlock = '<div id="demo" class="col-lg-6" data-aos="fade-up" data-aos-delay="100">'+
-                          '<h3 class="resume-title">Professional Experience</h3>'+
-                          '<div class="resume-item">'+
-                            '<h4>Programer/Game deveopler</h4>'+
-                           ' <h5>2022 - 2023</h5>'+
-                            '<p><em>Impact Gamers, Bradford, UK </em></p>'+
-                            '<ul>'+
-                              '<li>Develope games/programs to teach young people to create game or how to use computers.</li>'+
-                             ' <li>Became comptent in how to uses ClickTeam Fusion.</li>'+
-                              '<li>Lead seasons teaching young people how to use ClickTeam Fusion to create games.</li>'+
-                            '</ul>'+
-                          '</div>';
-          function add() {
-            document.getElementById("add").innerHTML = codeBlock
-          }
       </script>
       <style>
         #hero {
@@ -291,7 +266,7 @@
               </div>
           
               <div class="res-row">
-                <div class="yes" data-aos="fade-up">
+                <div data-aos="fade-up">
                   <div class="resume-item pb-0">
                     <h4>Personal</h4>
                     <p>Miss Sarah Hartley</p>
@@ -301,7 +276,7 @@
                     </ul>
                   </div>
             
-                <div class="yes" data-aos="fade-up" data-aos-delay="100">
+                <div data-aos="fade-up" data-aos-delay="100">
                   <div class="resume-item">
                     <h4>Work placement – Impact Gamers</h4>
                     <p>Adam Syrop – Founder and Director Impact Gamers</p>

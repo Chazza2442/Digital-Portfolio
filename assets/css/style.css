@@ -292,8 +292,11 @@ nav a:hover {
 }
 
 @media (max-width: 768px) {
-  .yes {
+  .res-row {
     display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
   }
 }
 
