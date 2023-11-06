@@ -234,8 +234,9 @@ svg:hover {
   .grid-container {
     padding-top: 25px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    width: 75%; /* Make the grid container 50% smaller */
     gap: 100px;
     margin: 0 auto; /* Center the grid container */
   }
