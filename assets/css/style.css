@@ -402,7 +402,7 @@ svg:hover {
 .contact .info {
   padding: 30px;
   background: #fff;
-  width: 50%;
+  width: 100%;
   height: 680px;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
@@ -413,7 +413,6 @@ svg:hover {
   float: left;
   width: 44px;
   height: 44px;
-
   display: flex;
   justify-content: center;
   align-items: center;
