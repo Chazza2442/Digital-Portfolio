@@ -435,6 +435,16 @@ svg:hover {
   color: black;
 }
 
+.contact .info a {
+  padding: 0 0 0 18px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.cv {
+  margin-bottom: 30px;
+}
+
 @media (max-width: 1199px) {
   .contact .info img{
     display: none;
